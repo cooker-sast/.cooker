@@ -1,0 +1,26 @@
+sources:
+  - { method: "<javax.servlet.http.HttpServletRequest: java.lang.String getHeader(java.lang.String)>", type: "java.lang.String" }
+  - { method: "<javax.servlet.http.HttpServletRequest: javax.servlet.http.Cookie[] getCookies()>", type: "javax.servlet.http.Cookie[]" }
+  - { method: "<javax.servlet.http.HttpServletRequest: java.util.Enumeration getHeaders(java.lang.String)>", type: "java.util.Enumeration" }
+  - { method: "<javax.servlet.http.HttpServletRequest: java.lang.String getPathInfo()>", type: "java.lang.String" }
+  - { method: "<javax.servlet.http.HttpServletRequest: java.lang.String getQueryString()>", type: "java.lang.String" }
+  - { method: "<javax.servlet.http.HttpServletRequest: java.lang.String getRequestURI()>", type: "java.lang.String" }
+  - { method: "<javax.servlet.http.HttpServletRequest: java.lang.StringBuffer getRequestURL()>", type: "java.lang.StringBuffer" }
+  - { method: "<javax.servlet.http.HttpServletRequest: java.lang.String getRequestURI()>", type: "java.lang.String" }
+  - { method: "<javax.servlet.ServletRequest: int getContentLength()>", type: "int" }
+  - { method: "<javax.servlet.ServletRequest: java.lang.String getContentType()>", type: "java.lang.String" }
+  - { method: "<javax.servlet.ServletRequest: javax.servlet.ServletInputStream getInputStream()>", type: "javax.servlet.ServletInputStream" }
+  - { method: "<javax.servlet.ServletRequest: java.lang.String getParameter(java.lang.String)>", type: "java.lang.String" }
+  - { method: "<javax.servlet.ServletRequest: java.util.Enumeration getParameterNames()>", type: "java.util.Enumeration" }
+  - { method: "<javax.servlet.ServletRequest: java.lang.String[] getParameterValues(java.lang.String)>", type: "java.lang.String[]" }
+  - { method: "<javax.servlet.ServletRequest: java.util.Map getParameterMap()>", type: "java.util.Map" }
+
+transfers:
+  # MultipartFile 文件上传
+  - { method: "<org.springframework.web.multipart.MultipartFile: java.lang.String getOriginalFilename()>",from: base,to: result,type: "java.lang.String" }
+  - { method: "<org.springframework.web.multipart.MultipartFile: java.lang.String getContentType()>",from: base,to: result,type: "java.lang.String" }
+  - { method: "<org.springframework.web.multipart.MultipartFile: byte[] getBytes()>",from: base,to: result,type: "byte[]" }
+  -
+reflect-transfers:
+  - { method: "<org.apache.struts2.ServletActionContext: javax.servlet.http.HttpServletRequest getRequest()>",from: null,to: result,type: "javax.servlet.http.HttpServletRequest" }
+

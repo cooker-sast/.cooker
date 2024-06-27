@@ -1,0 +1,12 @@
+subclassOf: null
+classNamePattern: null
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig: null
+invokeMethod: null
+paramType: null
+paramCount: null
+allowPhantom: false
+classNotations: 
+     - javax.jws.WebService
+methodNotations: null

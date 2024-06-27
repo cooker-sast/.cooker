@@ -1,0 +1,11 @@
+subclassOf:
+     - java.util.Comparator
+classNamePattern: null
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig:
+     - int compare(java.lang.Object,java.lang.Object)
+invokeMethod: null
+paramType: null
+paramCount: null
+allowPhantom: true

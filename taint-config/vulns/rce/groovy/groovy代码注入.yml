@@ -1,0 +1,25 @@
+sinks:
+  - { method: "<groovy.lang.GroovyShell: java.lang.Object evaluate(groovy.lang.GroovyCodeSource)>", index: 0 }
+  - { method: "<groovy.lang.GroovyShell: java.lang.Object evaluate(java.lang.String)>", index: 0 }
+  - { method: "<groovy.lang.GroovyShell: java.lang.Object evaluate(java.lang.String,java.lang.String)>", index: 0 }
+  - { method: "<groovy.lang.GroovyShell: java.lang.Object evaluate(java.lang.String,java.lang.String,java.lang.String)>", index: 0 }
+  - { method: "<groovy.lang.GroovyShell: java.lang.Object evaluate(java.io.File)>", index: 0 }
+  - { method: "<groovy.lang.GroovyShell: java.lang.Object evaluate(java.net.URI)>", index: 0 }
+  - { method: "<groovy.lang.GroovyShell: java.lang.Object evaluate(java.io.Reader)>", index: 0 }
+  - { method: "<groovy.lang.GroovyShell: java.lang.Object evaluate(java.io.Reader,java.lang.String)>", index: 0 }
+  - { method: "<groovy.lang.Script: java.lang.Object run()>", index: base }
+  - { method: "<groovy.util.GroovyScriptEngine: java.lang.String run(java.lang.String,java.lang.String)>", index: base }
+  - { method: "<groovy.util.GroovyScriptEngine: java.lang.String run(java.lang.String,groovy.lang.Binding)>", index: base }
+  - { method: "<groovy.lang.GroovyObject: java.lang.Object invokeMethod(java.lang.String,java.lang.Object)>", index: base }
+
+transfers:
+  # String 的拼接
+  - { method: "<groovy.lang.GroovyShell: groovy.lang.Script parse(groovy.lang.GroovyCodeSource)>",from: 0,to: result,type: "groovy.lang.GroovyShell" }
+  - { method: "<groovy.lang.GroovyShell: groovy.lang.Script parse(java.io.File)>",from: 0,to: result,type: "groovy.lang.GroovyShell" }
+  - { method: "<groovy.lang.GroovyShell: groovy.lang.Script parse(java.net.URI)>",from: 0,to: result,type: "groovy.lang.GroovyShell" }
+  - { method: "<groovy.lang.GroovyShell: groovy.lang.Script parse(java.lang.String)>",from: 0,to: result,type: "groovy.lang.GroovyShell" }
+  - { method: "<groovy.lang.GroovyShell: groovy.lang.Script parse(java.lang.String,java.lang.String)>",from: 0,to: result,type: "groovy.lang.GroovyShell" }
+  - { method: "<groovy.lang.GroovyShell: groovy.lang.Script parse(java.io.Reader)>",from: 0,to: result,type: "groovy.lang.GroovyShell" }
+  - { method: "<groovy.lang.GroovyClassLoader: java.lang.Class parseClass(java.io.File)>",from: 0,to: result,type: "java.lang.Class" }
+  - { method: "<groovy.lang.GroovyClassLoader: java.lang.Class parseClass(java.lang.String,java.lang.String)>",from: 0,to: result,type: "java.lang.Class" }
+  - { method: "<groovy.lang.GroovyClassLoader: java.lang.Class parseClass(java.lang.String)>",from: 0,to: result,type: "java.lang.Class" }

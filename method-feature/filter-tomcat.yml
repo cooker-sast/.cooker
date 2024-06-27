@@ -1,0 +1,14 @@
+subclassOf:
+     - javax.servlet.Filter
+classNamePattern: 
+     - ^(?!org\.springframework\.web|javax\.servlet\.http).*$
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig:
+     - void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)
+invokeMethod: null
+paramType: null
+paramCount: null
+allowPhantom: false
+classNotations: null
+methodNotations: null

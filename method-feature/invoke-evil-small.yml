@@ -1,0 +1,19 @@
+# subclass-of && class-name-pattern
+subclassOf: null
+classNamePattern: null
+# ( method-name-pattern || method-subsig ) && invoke-method
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig: null
+invokeMethod:
+  - "<javax.script.AbstractScriptEngine: java.lang.Object eval(java.lang.String)>"
+  - "<java.lang.Runtime: java.lang.Process exec(java.lang.String)>"
+  - "<java.lang.ProcessBuilder: java.lang.Process start()>"
+  - "<java.lang.ProcessImpl: java.lang.Process start()>"
+  - "<javax.naming.Context: java.lang.Object lookup(java.lang.String)>"
+  - "<javax.naming.Context: java.lang.Object lookup(javax.naming.Name)>"
+  - "<java.net.URL: java.net.URLConnection openConnection()>"
+
+paramType: null
+paramCount: null
+allowPhantom: false

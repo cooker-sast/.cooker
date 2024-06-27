@@ -1,0 +1,13 @@
+subclassOf:
+     - com.opensymphony.xwork2.ActionSupport
+classNamePattern: 
+     - ^(?!.*<init>).+$
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig: null
+invokeMethod: null
+paramType: null
+paramCount: null
+allowPhantom: false
+classNotations: null
+methodNotations: null

@@ -1,0 +1,17 @@
+subclassOf: null
+classNamePattern:
+     - ^(?!org\.springframework\.boot\.autoconfigure\.web\.BasicErrorController$|org\.springframework\.boot\.actuate\.cloudfoundry\.CloudFoundryDiscoveryMvcEndpoint$|org\.springframework\.boot\.actuate\.endpoint\.mvc\.HeapdumpMvcEndpoint$|org\.springframework\.boot\.actuate\.endpoint\.mvc\.JolokiaMvcEndpoint$|org\.springframework\.boot\.actuate\.endpoint\.mvc\.LogFileMvcEndpoint$).*$
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig: null
+invokeMethod: null
+paramType: null
+paramCount: null
+allowPhantom: false
+classNotations:
+     - org.springframework.web.bind.annotation.RestController
+     - org.springframework.stereotype.Controller
+methodNotations:
+     - org.springframework.web.bind.annotation.RequestMapping
+     - org.springframework.web.bind.annotation.GetMapping
+     - org.springframework.web.bind.annotation.PostMapping

@@ -1,0 +1,10 @@
+extend:
+  - taint-config/basic/default-transfers.yml
+sources:
+#  - { method: "<java.io.ObjectInputStream: java.lang.String readUTF()>", type: "java.lang.String" }
+#  - { method: "<java.io.ObjectInputStream: java.lang.Object readObject()>", type: "java.lang.Object" }
+  - { method: "<java.io.ObjectInputStream: java.io.ObjectInputStream$GetField readFields()>", type: "java.io.ObjectInputStream$GetField" }
+  - { method: "<java.io.ObjectInputStream$GetFieldImpl: java.lang.Object get(java.lang.String,java.lang.Object)>", type: "java.lang.Object" }
+sinks:
+  # 原生反序列化
+  - { method: "<java.io.ObjectInputStream: java.lang.Object readObject()>", index: base }

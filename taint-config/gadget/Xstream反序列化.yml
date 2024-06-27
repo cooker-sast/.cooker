@@ -1,0 +1,3 @@
+sources:
+  - { method: "<com.thoughtworks.xstream.converters.UnmarshallingContext: java.lang.Object convertAnother(java.lang.String,java.lang.Class)>", type: "java.lang.Object" }
+  - { method: "<com.thoughtworks.xstream.core.TreeUnmarshaller: java.lang.Object convertAnother(java.lang.Object,java.lang.Class)>", type: "java.lang.Object"}

@@ -1,0 +1,10 @@
+sinks:
+  # js engine 注入
+  - { method: "<javax.script.AbstractScriptEngine: java.lang.Object eval(java.lang.String)>", index: 0 }
+  - { method: "<javax.script.ScriptEngine: java.lang.Object eval(java.lang.String,javax.script.Bindings)>", index: 0}
+  - { method: "<javax.script.ScriptEngine: java.lang.Object eval(java.lang.String)>", index: 0}
+
+# reflect transfer 就最好返回一个 实际的object 了，type 不要是一个 interface
+reflect-transfers:
+  # ScriptEngine engine = new ScriptEngineManager().getEngineByName("js"); 真没法分析得到 engine,engine 的值是空的，没法继续了，所以用reflect obj，为了能够继续分析
+  - { method: "<javax.script.ScriptEngineManager: javax.script.ScriptEngine getEngineByName(java.lang.String)>", from: base, to: result, type: "javax.script.ScriptEngine" }

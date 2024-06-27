@@ -1,0 +1,13 @@
+extend:
+  - taint-config/vulns
+  - taint-config/basic/default-transfers.yml
+sources:
+  - { method: "<java.io.ObjectInputStream: java.lang.String readUTF()>", type: "java.lang.String" }
+  - { method: "<java.io.ObjectInputStream: java.lang.Object readObject()>", type: "java.lang.Object" }
+  - { method: "<java.io.ObjectInputStream: java.io.ObjectInputStream$GetField readFields()>", type: "java.io.ObjectInputStream$GetField" }
+  - { method: "<java.io.ObjectInputStream$GetFieldImpl: java.lang.Object get(java.lang.String,java.lang.Object)>", type: "java.lang.Object" }
+sinks:
+  - { method: "<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>", index: base }
+  - { method: "<java.lang.reflect.Constructor: java.lang.Object newInstance(java.lang.Object[])>", index: 0 }
+  - { method: "<sun.reflect.misc.MethodUtil: java.lang.Object invoke(java.lang.reflect.Method,java.lang.Object,java.lang.Object[])>", index: 0 }
+  - { method: "<java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>", index: 2}

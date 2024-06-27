@@ -1,0 +1,15 @@
+subclassOf:
+     - java.io.Serializable
+classNamePattern: null
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig:
+     - int compare(java.lang.Object,java.lang.Object)
+     - int hashCode()
+     - java.lang.String toString()
+     - int compareTo(java.lang.Object)
+     - boolean equals(java.lang.Object)
+invokeMethod: null
+paramType: null
+paramCount: null
+allowPhantom: true

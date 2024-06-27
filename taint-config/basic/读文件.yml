@@ -1,0 +1,37 @@
+sinks:
+  # 读文件
+  - { method: "<java.io.FileInputStream: int read(byte[])>", index: base}
+  - { method: "<java.io.FileInputStream: int read(byte[],int,int)>", index: base}
+
+  - { method: "<java.nio.file.Files: byte[] read(java.io.InputStream,int)>", index: 0}
+  - { method: "<java.nio.file.Files: byte[] readAllBytes(java.nio.file.Path)>", index: 0}
+  - { method: "<java.nio.file.Files: java.util.List readAllLines(java.nio.file.Path,java.nio.charset.Charset)>", index: 0}
+  - { method: "<java.nio.file.Files: java.util.List readAllLines(java.nio.file.Path)>", index: 0}
+
+  - { method: "<org.apache.commons.io.FileUtils: java.lang.String readFileToString(java.io.File,java.nio.charset.Charset)>", index: 0}
+  - { method: "<org.apache.commons.io.FileUtils: java.lang.String readFileToString(java.io.File,java.lang.String)>", index: 0}
+  - { method: "<org.apache.commons.io.FileUtils: java.lang.String readFileToString(java.io.File)>", index: 0}
+  - { method: "<org.apache.commons.io.FileUtils: byte[] readFileToByteArray(java.io.File)>", index: 0}
+  - { method: "<org.apache.commons.io.FileUtils: java.util.List readLines(java.io.File,java.nio.charset.Charset)>", index: 0}
+  - { method: "<org.apache.commons.io.FileUtils: java.util.List readLines(java.io.File,java.lang.String)>", index: 0}
+  - { method: "<org.apache.commons.io.FileUtils: java.util.List readLines(java.io.File)>", index: 0}
+
+  - { method: "<java.io.BufferedReader: java.lang.String readLine(boolean)>", index: base}
+  - { method: "<java.io.BufferedReader: java.lang.String readLine()>", index: base}
+
+transfers:
+  - { method: "<java.io.FileInputStream: int read(byte[])>", from: base, to: 0, type: "byte[]" }
+  - { method: "<java.io.FileInputStream: int read(byte[],int,int)>", from: base, to: 0, type: "byte[]" }
+  - { method: "<java.io.InputStream: int read(byte[])>", from: base, to: 0, type: "byte[]" }
+  - { method: "<java.io.InputStream: int read(byte[],int,int)>", from: base, to: 0, type: "byte[]" }
+  - { method: "<java.nio.file.Files: byte[] read(java.io.InputStream,int)>", from: 0, to: result, type: "byte[]" }
+  - { method: "<java.nio.file.Files: byte[] readAllBytes(java.nio.file.Path)>", from: 0, to: result, type: "byte[]" }
+  - { method: "<java.nio.file.Files: java.util.List readAllLines(java.nio.file.Path,java.nio.charset.Charset)>", from: 0, to: result, type: "java.util.ArrayList" }
+  - { method: "<java.nio.file.Files: java.util.List readAllLines(java.nio.file.Path)>", from: 0, to: result, type: "java.util.ArrayList" }
+  - { method: "<org.apache.commons.io.FileUtils: java.lang.String readFileToString(java.io.File,java.nio.charset.Charset)>", from: 0, to: result, type: "java.lang.String" }
+  - { method: "<org.apache.commons.io.FileUtils: java.lang.String readFileToString(java.io.File,java.lang.String)>", from: 0, to: result, type: "java.lang.String" }
+  - { method: "<org.apache.commons.io.FileUtils: java.lang.String readFileToString(java.io.File)>", from: 0, to: result, type: "java.lang.String" }
+  - { method: "<org.apache.commons.io.FileUtils: byte[] readFileToByteArray(java.io.File)>", from: 0, to: result, type: "byte[]" }
+  - { method: "<org.apache.commons.io.FileUtils: java.util.List readLines(java.io.File,java.nio.charset.Charset)>", from: 0, to: result, type: "java.util.ArrayList" }
+  - { method: "<org.apache.commons.io.FileUtils: java.util.List readLines(java.io.File,java.lang.String)>", from: 0, to: result, type: "java.util.ArrayList" }
+  - { method: "<org.apache.commons.io.FileUtils: java.util.List readLines(java.io.File)>", from: 0, to: result, type: "java.util.ArrayList" }

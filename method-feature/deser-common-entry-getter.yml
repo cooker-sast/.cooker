@@ -1,0 +1,11 @@
+subclassOf:
+     - java.io.Serializable
+classNamePattern: null
+methodNamePattern:
+     - get.+
+methodNamePatternCaseSensitive: true
+methodSubsig: null
+invokeMethod: null
+paramType: null
+paramCount: 0
+allowPhantom: true

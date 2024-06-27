@@ -1,0 +1,39 @@
+# subclass-of && class-name-pattern
+subclassOf: null
+classNamePattern: null
+# ( method-name-pattern || method-subsig ) && invoke-method
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig: null
+invokeMethod:
+  - "<javax.script.AbstractScriptEngine: java.lang.Object eval(java.lang.String)>"
+  - "<java.io.ObjectInputStream: java.lang.Object readObject()>"
+  - "<java.lang.Runtime: java.lang.Process exec(java.lang.String)>"
+  - "<java.lang.ProcessBuilder: java.lang.Process start()>"
+  - "<java.lang.ProcessImpl: java.lang.Process start()>"
+  - "<java.io.OutputStream: void write(byte[])>"
+  - "<java.io.OutputStream: void write(byte[],int,int)>"
+  - "<java.io.File: boolean delete()>"
+  - "<java.io.File: boolean createNewFile()>"
+  - "<java.io.Writer: void write(char[])>"
+  - "<java.io.Writer: void write(java.lang.String)>"
+  - "<java.io.Writer: void write(java.lang.CharSequence)>"
+  - "<java.io.Writer: void write(java.lang.String,int,int)>"
+  - "<java.io.Writer: void write(char[],int,int)>"
+  - "<java.io.Writer: void write(java.lang.CharSequence,int,int)>"
+  - "<javax.naming.InitialContext: java.lang.Object lookup(java.lang.String)>"
+  - "<javax.naming.Context: java.lang.Object lookup(java.lang.String)>"
+  - "<javax.naming.Context: java.lang.Object lookup(javax.naming.Name)>"
+  - "<javax.naming.directory.DirContext: javax.naming.directory.DirContext getSchema(javax.naming.Name)>"
+  - "<javax.naming.directory.DirContext: javax.naming.directory.DirContext getSchema(java.lang.String)>"
+  - "<javax.naming.directory.DirContext: javax.naming.directory.DirContext getSchemaClassDefinition(javax.naming.Name)>"
+  - "<javax.naming.directory.DirContext: javax.naming.directory.DirContext getSchemaClassDefinition(java.lang.String)>"
+  - "<javax.naming.directory.InitialDirContext: javax.naming.directory.DirContext getSchema(javax.naming.Name)>"
+  - "<javax.naming.directory.InitialDirContext: javax.naming.directory.DirContext getSchema(java.lang.String)>"
+  - "<javax.naming.directory.InitialDirContext: javax.naming.directory.DirContext getSchemaClassDefinition(javax.naming.Name)>"
+  - "<javax.naming.directory.InitialDirContext: javax.naming.directory.DirContext getSchemaClassDefinition(java.lang.String)>"
+  - "<java.net.URL: java.net.URLConnection openConnection()>"
+  
+paramType: null
+paramCount: null
+allowPhantom: false

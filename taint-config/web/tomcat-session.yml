@@ -1,0 +1,7 @@
+sinks:
+  # session set attribute
+  - { method: "<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.String)>",index: 0 }
+  - { method: "<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.String)>",index: 1 }
+
+reflect-transfers:
+  - { method: "<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>", from: base, to: result, type: "org.apache.catalina.session.StandardSession"}

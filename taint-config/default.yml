@@ -1,0 +1,9 @@
+extend:
+  # source
+  - taint-config/web/tomcat-web.yml
+  # sink
+  - taint-config/basic/defineClass.yml
+  # transfer
+  - taint-config/basic/default-transfers.yml
+  # vulns
+  - taint-config/vulns

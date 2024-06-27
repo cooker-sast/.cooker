@@ -1,0 +1,27 @@
+# subclass-of && class-name-pattern
+subclassOf: null
+classNamePattern:
+  - ^(?!org\.apache\.log4j).*
+# ( method-name-pattern || method-subsig ) && invoke-method
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig: null
+invokeMethod:
+  - "<org.apache.logging.log4j.Logger: void error(java.lang.String)>"
+#  - "<org.apache.logging.log4j.Logger: void info(java.lang.String)>"
+  - "<org.apache.logging.log4j.Logger: void fatal(java.lang.String)>"
+#  - "<org.apache.logging.log4j.Logger: void warn(java.lang.String)>"
+#  - "<org.apache.logging.log4j.Logger: void debug(java.lang.String)>"
+  - "<org.apache.logging.log4j.Logger: void off(java.lang.String)>"
+#  - "<org.apache.logging.log4j.Logger: void trace(java.lang.String)>"
+  - "<org.apache.log4j.Category: void error(java.lang.Object)>"
+#  - "<org.apache.log4j.Category: void debug(java.lang.Object)>"
+  - "<org.apache.log4j.Category: void fatal(java.lang.Object)>"
+#  - "<org.apache.log4j.Category: void trace(java.lang.Object)>"
+#  - "<org.apache.log4j.Category: void warn(java.lang.Object)>"
+#  - "<org.apache.log4j.Category: void info(java.lang.Object)>"
+  - "<org.apache.log4j.Category: void off(java.lang.Object)>"
+
+paramType: null
+paramCount: null
+allowPhantom: false

@@ -1,0 +1,9 @@
+sinks:
+  # spel 注入
+  - { method: "<org.springframework.expression.Expression: java.lang.Object getValue()>", index: base }
+  - { method: "<org.springframework.expression.spel.standard.SpelExpression: java.lang.Object getValue()>", index: base }
+
+transfers:
+  # spel 注入，parseExpression() 实际上只是传播污点，其实视为sink应该也可以，但是作为transfer更准确一点
+  - { method: "<org.springframework.expression.ExpressionParser: org.springframework.expression.Expression parseExpression(java.lang.String)>", from: 0, to: result, type: "org.springframework.expression.Expression" }
+  - { method: "<org.springframework.expression.common.TemplateAwareExpressionParser: org.springframework.expression.Expression parseExpression(java.lang.String)>", from: 0, to: result, type: "org.springframework.expression.Expression" }

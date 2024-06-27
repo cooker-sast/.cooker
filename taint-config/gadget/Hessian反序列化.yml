@@ -1,0 +1,3 @@
+sources:
+  - { method: "<com.caucho.hessian.io.Hessian2Input: java.lang.Object readObject()>", type: "java.lang.Object"}
+  - { method: "<com.caucho.hessian.io.HessianInput: java.lang.Object readObject()>", type: "java.lang.Object"}

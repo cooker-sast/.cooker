@@ -1,0 +1,21 @@
+sinks:
+  - { method: "<com.alibaba.fastjson.JSONObject: com.alibaba.fastjson.JSONObject parseObject(java.lang.String)>", index: 0 }
+  - { method: "<com.alibaba.fastjson.JSON: com.alibaba.fastjson.JSONObject parseObject(java.lang.String)>", index: 0 }
+  - { method: "<com.alibaba.fastjson.JSON: java.lang.Object parse(java.lang.String)>", index: 0 }
+  - { method: "<com.alibaba.fastjson2.JSONObject: com.alibaba.fastjson2.JSONObject parseObject(java.lang.String)>", index: 0 }
+  - { method: "<com.alibaba.fastjson2.JSON: com.alibaba.fastjson2.JSONObject parseObject(java.lang.String)>", index: 0 }
+  - { method: "<com.alibaba.fastjson2.JSON: java.lang.Object parse(java.lang.String)>", index: 0 }
+
+transfers:
+  - { method: "<com.alibaba.fastjson.JSONObject: com.alibaba.fastjson.JSONObject parseObject(java.lang.String)>", from: 0, to: result, type: "com.alibaba.fastjson.JSONObject" }
+  - { method: "<com.alibaba.fastjson.JSON: com.alibaba.fastjson.JSONObject parseObject(java.lang.String)>", from: 0, to: result, type: "com.alibaba.fastjson.JSONObject" }
+  - { method: "<com.alibaba.fastjson.JSON: java.lang.Object parse(java.lang.String)>", from: 0, to: result, type: "java.lang.Object" }
+  - { method: "<com.alibaba.fastjson.JSONObject: java.lang.String getString(java.lang.String)>", from: base, to: result, type: "java.lang.String" }
+  - { method: "<com.alibaba.fastjson.JSONObject: com.alibaba.fastjson.JSONObject getJSONObject(java.lang.String)>", from: base, to: result, type: "com.alibaba.fastjson.JSONObject" }
+
+  - { method: "<com.alibaba.fastjson2.JSONObject: com.alibaba.fastjson2.JSONObject parseObject(java.lang.String)>", from: 0, to: result, type: "com.alibaba.fastjson2.JSONObject" }
+  - { method: "<com.alibaba.fastjson2.JSON: com.alibaba.fastjson2.JSONObject parseObject(java.lang.String)>", from: 0, to: result, type: "com.alibaba.fastjson2.JSONObject" }
+  - { method: "<com.alibaba.fastjson2.JSON: java.lang.Object parse(java.lang.String)>", from: 0, to: result, type: "java.lang.Object" }
+  - { method: "<com.alibaba.fastjson2.JSONObject: java.lang.String getString(java.lang.String)>", from: base, to: result, type: "java.lang.String" }
+  - { method: "<com.alibaba.fastjson2.JSONObject: com.alibaba.fastjson2.JSONObject getJSONObject(java.lang.String)>", from: base, to: result, type: "com.alibaba.fastjson2.JSONObject" }
+

@@ -1,0 +1,12 @@
+subclassOf:
+     - java.util.Map
+     - java.io.Serializable
+classNamePattern: null
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig:
+     - java.lang.Object get(java.lang.Object)
+invokeMethod: null
+paramType: null
+paramCount: null
+allowPhantom: true

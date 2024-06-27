@@ -1,0 +1,14 @@
+subclassOf: 
+     - org.springframework.web.servlet.handler.HandlerInterceptorAdapter
+classNamePattern: 
+     - ^(?!org\.springframework\.web\.servlet).*$
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig:
+     - boolean preHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object)
+invokeMethod: null
+paramType: null
+paramCount: null
+allowPhantom: false
+classNotations: null
+methodNotations: null

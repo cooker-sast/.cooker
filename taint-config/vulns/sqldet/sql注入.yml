@@ -1,0 +1,22 @@
+sinks:
+  # sql 注入
+  - { method: "<java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>" , index: 0 }
+  - { method: "<java.sql.Statement: boolean execute(java.lang.String)>" , index: 0 }
+  - { method: "<org.apache.commons.dbutils.QueryRunner: java.lang.Object query(java.sql.Connection,java.lang.String,java.lang.Object[],org.apache.commons.dbutils.ResultSetHandler)>" , index: 1 }
+  - { method: "<org.apache.commons.dbutils.QueryRunner: java.lang.Object query(java.sql.Connection,java.lang.String,java.lang.Object,org.apache.commons.dbutils.ResultSetHandler)>" , index: 1 }
+  - { method: "<org.apache.commons.dbutils.QueryRunner: java.lang.Object query(java.sql.Connection,java.lang.String,org.apache.commons.dbutils.ResultSetHandler)>" , index: 1 }
+  - { method: "<org.apache.commons.dbutils.QueryRunner: java.lang.Object query(java.lang.String,java.lang.Object[],org.apache.commons.dbutils.ResultSetHandler)>" , index: 0 }
+  - { method: "<org.apache.commons.dbutils.QueryRunner: java.lang.Object query(java.lang.String,java.lang.Object,org.apache.commons.dbutils.ResultSetHandler)>" , index: 0 }
+  - { method: "<org.apache.commons.dbutils.QueryRunner: java.lang.Object query(java.lang.String,org.apache.commons.dbutils.ResultSetHandler)>" , index: 0 }
+  - { method: "<org.springframework.jdbc.core.JdbcTemplate: java.lang.Object execute(org.springframework.jdbc.core.ConnectionCallback)>" , index: 0 }
+
+transfers:
+  - { method: "<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>", from: 0, to: result, type: "java.sql.PreparedStatement"}
+
+reflect-transfers:
+  # sql注入，DriverManager.getConnection()里面是通过反射创建对象的，这里直接创建了, createStatement()也很难搞，直接加成reflect transfer
+  - { method: "<java.sql.DriverManager: java.sql.Connection getConnection(java.lang.String,java.lang.String,java.lang.String)>", from: null, to: result, type: "java.sql.Connection"}
+  - { method: "<java.sql.Connection: java.sql.Statement createStatement()>", from: base, to: result, type: "java.sql.Statement"}
+  - { method: "<org.springframework.jdbc.support.JdbcAccessor: javax.sql.DataSource getDataSource()>", from: base, to: result, type: "javax.sql.DataSource"}
+  - { method: "<org.springframework.jdbc.support.JdbcAccessor: javax.sql.DataSource getDataSource()>", from: base, to: result, type: "javax.sql.DataSource"}
+  - { method: "<org.springframework.jdbc.core.support.JdbcDaoSupport: org.springframework.jdbc.core.support.JdbcTemplate getJdbcTemplate()>", from: base, to: result, type: "org.springframework.jdbc.core.support.JdbcTemplate"}

@@ -1,0 +1,10 @@
+subclassOf: null
+classNamePattern: null
+methodNamePattern:
+     - set.+
+methodNamePatternCaseSensitive: true
+methodSubsig: null
+invokeMethod: null
+paramType: null
+paramCount: 1
+allowPhantom: false

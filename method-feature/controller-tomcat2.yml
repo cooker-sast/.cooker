@@ -1,0 +1,20 @@
+subclassOf:
+     - jakarta.servlet.http.HttpServlet
+classNamePattern: null
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig:
+     - void doGet(jakarta.servlet.http.HttpServletRequest,jakarta.servlet.http.HttpServletResponse)
+     - void doPost(jakarta.servlet.http.HttpServletRequest,jakarta.servlet.http.HttpServletResponse)
+     - void doHead(jakarta.servlet.http.HttpServletRequest,jakarta.servlet.http.HttpServletResponse)
+     - void doPut(jakarta.servlet.http.HttpServletRequest,jakarta.servlet.http.HttpServletResponse)
+     - void doDelete(jakarta.servlet.http.HttpServletRequest,jakarta.servlet.http.HttpServletResponse)
+     - void doOptions(jakarta.servlet.http.HttpServletRequest,jakarta.servlet.http.HttpServletResponse)
+     - void doTrace(jakarta.servlet.http.HttpServletRequest,jakarta.servlet.http.HttpServletResponse)
+     - void service(jakarta.servlet.http.HttpServletRequest,jakarta.servlet.http.HttpServletResponse)
+invokeMethod: null
+paramType: null
+paramCount: null
+allowPhantom: false
+classNotations: null
+methodNotations: null

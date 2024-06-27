@@ -1,0 +1,24 @@
+# subclass-of && class-name-pattern
+subclassOf: null
+classNamePattern: null
+# ( method-name-pattern || method-subsig ) && invoke-method
+methodNamePattern: null
+methodNamePatternCaseSensitive: true
+methodSubsig: null
+invokeMethod:
+  - "<javax.script.AbstractScriptEngine: java.lang.Object eval(java.lang.String)>"
+  - "<java.lang.Runtime: java.lang.Process exec(java.lang.String)>"
+  - "<java.lang.ProcessBuilder: java.lang.Process start()>"
+  - "<java.lang.ProcessImpl: java.lang.Process start()>"
+  - "<javax.naming.InitialContext: java.lang.Object lookup(java.lang.String)>"
+  - "<javax.naming.Context: java.lang.Object lookup(java.lang.String)>"
+  - "<javax.naming.Context: java.lang.Object lookup(javax.naming.Name)>"
+  - "<javax.naming.directory.DirContext: javax.naming.directory.DirContext getSchema(javax.naming.Name)>"
+  - "<javax.naming.directory.DirContext: javax.naming.directory.DirContext getSchema(java.lang.String)>"
+  - "<java.io.OutputStream: void write(byte[])>"
+  - "<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>"
+  - "<java.lang.Class: java.lang.Class forName(java.lang.String,boolean,java.lang.ClassLoader)>"
+  - "<java.net.URL: java.net.URLConnection openConnection()>"
+paramType: null
+paramCount: null
+allowPhantom: false

@@ -1,0 +1,13 @@
+subclassOf:
+  - jakarta.servlet.http.Filter
+  - javax.servlet.http.Filter
+classNamePattern: null
+#  - java.io.Serializable
+allowPhantom: false
+notations:
+#  - java.io.Serializable
+  - org.springframework.web.bind.annotation.RestController
+  - org.springframework.stereotype.Controller
+  - jakarta.servlet.annotation.WebServlet
+  - javax.servlet.annotation.WebServlet
+# ( method-name-pattern || method-subsig ) && invoke-method

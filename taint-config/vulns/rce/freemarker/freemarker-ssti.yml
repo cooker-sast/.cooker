@@ -1,0 +1,6 @@
+sinks:
+  - { method: "<freemarker.template.Template: void process(java.lang.Object,java.io.Writer)>", index: base }
+
+transfers:
+  - { method: "<freemarker.template.Configuration: freemarker.template.Template getTemplate(java.lang.String)>", from: 0, to: result, type: "freemarker.template.Template" }
+

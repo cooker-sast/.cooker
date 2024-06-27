@@ -1,0 +1,11 @@
+subclassOf: null
+classNamePattern: null
+methodNamePattern:
+  - "<init>"
+methodNamePatternCaseSensitive: true
+methodSubsig: null
+invokeMethod: null
+paramType:
+  - { index: 0 , type: "java.lang.String" }
+paramCount: 1
+allowPhantom: false

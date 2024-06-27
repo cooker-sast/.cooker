@@ -1,0 +1,20 @@
+sinks:
+  - { method: "<org.xml.sax.XMLReader: void parse(org.xml.sax.InputSource)>", index: 0 }
+  - { method: "<org.jdom2.input.SAXBuilder: org.jdom2.Document build(org.xml.sax.InputSource)>", index: 0 }
+  - { method: "<org.dom4j.io.SAXReader: org.dom4j.Document read(org.xml.sax.InputSource)>", index: 0 }
+  - { method: "<org.xml.sax.XMLReader: void parse(org.xml.sax.InputSource)>", index: 0 }
+  - { method: "<javax.xml.parsers.SAXParser: void parse(org.xml.sax.InputSource, org.xml.sax.helpers.DefaultHandler)>", index: 0 }
+  - { method: "<org.apache.commons.digester3.Digester: java.lang.Object parse(java.io.Reader)>", index: 0 }
+  - { method: "<javax.xml.parsers.DocumentBuilder: org.w3c.dom.Document parse(org.xml.sax.InputSource)>", index: 0 }
+  - { method: "<org.dom4j.DocumentHelper: org.dom4j.Document parseText(java.lang.String)>", index: 0 }
+
+reflect-transfers:
+  - { method: "<org.xml.sax.helpers.XMLReaderFactory: org.xml.sax.XMLReader createXMLReader()>", from: base, to: result, type: "org.xml.sax.XMLReader" }
+  - { method: "<javax.xml.parsers.SAXParserFactory: javax.xml.parsers.SAXParserFactory newInstance()>", from: base, to: result, type: "javax.xml.parsers.SAXParserFactory" }
+  - { method: "<org.xml.sax.helpers.XMLReaderFactory: org.xml.sax.XMLReader createXMLReader ()>", from: base, to: result, type: "org.xml.sax.XMLReader" }
+  - { method: "<javax.xml.parsers.SAXParserFactory: javax.xml.parsers.SAXParser newSAXParser()>", from: base, to: result, type: "javax.xml.parsers.SAXParser" }
+  - { method: "<javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilderFactory newInstance()>", from: base, to: result, type: "javax.xml.parsers.DocumentBuilderFactory" }
+  - { method: "<javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilder newDocumentBuilder()>", from: base, to: result, type: "javax.xml.parsers.DocumentBuilder" }
+  - { method: "<javax.xml.parsers.SAXParser: org.xml.sax.XMLReader getXMLReader()>", from: base, to: result, type: "org.xml.sax.XMLReader" }
+  - { method: "<javax.xml.parsers.SAXParserFactory: javax.xml.parsers.SAXParser newSAXParser()>", from: base, to: result, type: "javax.xml.parsers.SAXParser" }
+
