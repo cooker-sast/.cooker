@@ -1,3 +1,5 @@
+
+# 原生反序列化
 extend:
   - taint-config/vulns
   - taint-config/basic/default-transfers.yml
