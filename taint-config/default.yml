@@ -7,3 +7,5 @@ extend:
   - taint-config/basic/default-transfers.yml
   # vulns
   - taint-config/vulns
+  # 原生反序列化
+  - taint-config\basic\jnd-deser.yml
