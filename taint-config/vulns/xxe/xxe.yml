@@ -9,11 +9,10 @@ sinks:
   - { method: "<org.dom4j.DocumentHelper: org.dom4j.Document parseText(java.lang.String)>", index: 0 }
 
 reflect-transfers:
-  - { method: "<org.xml.sax.helpers.XMLReaderFactory: org.xml.sax.XMLReader createXMLReader()>", from: base, to: result, type: "org.xml.sax.XMLReader" }
-  - { method: "<javax.xml.parsers.SAXParserFactory: javax.xml.parsers.SAXParserFactory newInstance()>", from: base, to: result, type: "javax.xml.parsers.SAXParserFactory" }
-  - { method: "<org.xml.sax.helpers.XMLReaderFactory: org.xml.sax.XMLReader createXMLReader ()>", from: base, to: result, type: "org.xml.sax.XMLReader" }
+  - { method: "<org.xml.sax.helpers.XMLReaderFactory: org.xml.sax.XMLReader createXMLReader()>", from: null, to: result, type: "org.xml.sax.XMLReader" }
+  - { method: "<javax.xml.parsers.SAXParserFactory: javax.xml.parsers.SAXParserFactory newInstance()>", from: null, to: result, type: "javax.xml.parsers.SAXParserFactory" }
   - { method: "<javax.xml.parsers.SAXParserFactory: javax.xml.parsers.SAXParser newSAXParser()>", from: base, to: result, type: "javax.xml.parsers.SAXParser" }
-  - { method: "<javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilderFactory newInstance()>", from: base, to: result, type: "javax.xml.parsers.DocumentBuilderFactory" }
+  - { method: "<javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilderFactory newInstance()>", from: null, to: result, type: "javax.xml.parsers.DocumentBuilderFactory" }
   - { method: "<javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilder newDocumentBuilder()>", from: base, to: result, type: "javax.xml.parsers.DocumentBuilder" }
   - { method: "<javax.xml.parsers.SAXParser: org.xml.sax.XMLReader getXMLReader()>", from: base, to: result, type: "org.xml.sax.XMLReader" }
   - { method: "<javax.xml.parsers.SAXParserFactory: javax.xml.parsers.SAXParser newSAXParser()>", from: base, to: result, type: "javax.xml.parsers.SAXParser" }
