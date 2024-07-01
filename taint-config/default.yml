@@ -8,4 +8,4 @@ extend:
   # vulns
   - taint-config/vulns
   # 原生反序列化
-  - taint-config\basic\jnd-deser.yml
+  - taint-config/basic/jnd-deser.yml

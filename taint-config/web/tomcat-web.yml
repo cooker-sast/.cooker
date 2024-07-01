@@ -20,7 +20,7 @@ transfers:
   - { method: "<org.springframework.web.multipart.MultipartFile: java.lang.String getOriginalFilename()>",from: base,to: result,type: "java.lang.String" }
   - { method: "<org.springframework.web.multipart.MultipartFile: java.lang.String getContentType()>",from: base,to: result,type: "java.lang.String" }
   - { method: "<org.springframework.web.multipart.MultipartFile: byte[] getBytes()>",from: base,to: result,type: "byte[]" }
-  -
+
 reflect-transfers:
   - { method: "<org.apache.struts2.ServletActionContext: javax.servlet.http.HttpServletRequest getRequest()>",from: null,to: result,type: "javax.servlet.http.HttpServletRequest" }
 
