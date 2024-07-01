@@ -1,0 +1,8 @@
+subclassOf: null
+classNamePattern: 
+  - java\..*
+  - javax\..*
+  - sun\..*
+  - com\.sun\..*
+allowPhantom: false
+notations: null

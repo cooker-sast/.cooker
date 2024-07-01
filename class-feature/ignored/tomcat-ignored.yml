@@ -1,0 +1,7 @@
+subclassOf: null
+classNamePattern: 
+  - org\.apache\.catalina\..*
+  - org\.apache\.coyote\..*
+  - org\.apache\.tomcat\..*
+allowPhantom: false
+notations: null

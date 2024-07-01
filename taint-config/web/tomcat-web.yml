@@ -13,7 +13,8 @@ sources:
   - { method: "<javax.servlet.ServletRequest: java.lang.String getParameter(java.lang.String)>", type: "java.lang.String" }
   - { method: "<javax.servlet.ServletRequest: java.util.Enumeration getParameterNames()>", type: "java.util.Enumeration" }
   - { method: "<javax.servlet.ServletRequest: java.lang.String[] getParameterValues(java.lang.String)>", type: "java.lang.String[]" }
-  - { method: "<javax.servlet.ServletRequest: java.util.Map getParameterMap()>", type: "java.util.Map" }
+  # - { method: "<javax.servlet.ServletRequest: java.util.Map getParameterMap()>", type: "java.util.Map" }
+  - { method: "<javax.servlet.ServletRequest: java.util.Map getParameterMap()>", type: "java.util.LinkedHashMap" }
 
 transfers:
   # MultipartFile 文件上传
