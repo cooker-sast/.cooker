@@ -1,0 +1,6 @@
+notSubclassOf:
+  - java.io.Serializable
+subclassOf: null
+classNamePattern: null
+allowPhantom: false
+notations: null
