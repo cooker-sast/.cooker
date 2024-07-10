@@ -1,0 +1,9 @@
+sinks:
+  - { method: "<org.apache.commons.jxpath.JXPathContext: java.lang.Object getValue(java.lang.String)>",index: 0 }
+  - { method: "<org.apache.commons.jxpath.JXPathContext: java.lang.Object getValue(java.lang.String,java.lang.Class)>",index: 0 }
+
+reflect-transfers:
+  - { method: "<org.apache.commons.jxpath.JXPathContext: org.apache.commons.jxpath.JXPathContext newContext(java.lang.Object)>",from: null,to: result,type: "org.apache.commons.jxpath.JXPathContext" }
+  - { method: "<org.apache.commons.jxpath.JXPathContext: org.apache.commons.jxpath.JXPathContext newContext(java.lang.Object)>",from: null,to: result,type: "org.apache.commons.jxpath.JXPathContext" }
+  - { method: "<org.apache.commons.jxpath.JXPathContext: org.apache.commons.jxpath.JXPathContext newContext(java.lang.Object)>",from: null,to: result,type: "org.apache.commons.jxpath.JXPathContext" }
+  - { method: "<org.apache.commons.jxpath.JXPathContext: org.apache.commons.jxpath.JXPathContext newContext(org.apache.commons.jxpath.JXPathContext,java.lang.Object)>",from: null,to: result,type: "org.apache.commons.jxpath.JXPathContext" }
