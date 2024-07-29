@@ -1,0 +1,10 @@
+rules:
+  - id: email
+    pattern-regex: "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
+    message: "email"
+    severity: WARNING
+    languages:
+      - generic
+    metadata:
+      vulnerability_class:
+        - Sensitive Info Leak
