@@ -8,10 +8,11 @@ sinks:
   - { method: "<javax.imageio.ImageIO: java.awt.image.BufferedImage read(java.net.URL)>", index: 0}
   - { method: "<com.squareup.okhttp.Call: com.squareup.okhttp.Response execute()>", index: base}
   - { method: "<org.jsoup.helper.HttpConnection: org.jsoup.Connection$Response execute()>", index: base}
-
+  - { method: "<org.apache.http.impl.client.CloseableHttpClient: org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>", index: 0}
 
 transfers:
   - { method: "<org.jsoup.Jsoup: org.jsoup.Connection connect(java.lang.String)>", from: 0, to: result, type: "org.jsoup.helper.HttpConnection"}
   - { method: "<com.squareup.okhttp.Request$Builder: com.squareup.okhttp.Request$Builder url(com.squareup.okhttp.HttpUrl)>", from: 0, to: result, type: "com.squareup.okhttp.Request$Builder"}
   - { method: "<com.squareup.okhttp.Request$Builder: com.squareup.okhttp.Request$Builder url(java.lang.String)>", from: 0, to: result, type: "com.squareup.okhttp.Request$Builder"}
+  - { method: "<org.apache.http.client.utils.URIBuilder: java.net.URI build()>", from: base, to: result, type: "java.net.URI"}
 

@@ -90,6 +90,13 @@ transfers:
   - { method: "<java.util.ArrayList: void add(int,java.lang.Object)>",from: 1,to: base,type: "java.util.ArrayList" }
   - { method: "<java.util.ArrayList: void add(int,java.lang.Object)>",from: 1,to: base,type: "java.util.ArrayList" }
   - { method: "<java.util.Arrays: java.util.List asList(java.lang.Object[])>",from: 0,to: result,type: "java.util.Arrays$ArrayList" }
+  #map get put
+  - { method: "<java.util.HashMap: java.lang.Object get(java.lang.Object)>",from: base,to: result,type: "java.lang.Object" }
+  - { method: "<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>",from: 1,to: base,type: "java.util.HashMap" }
+
+  #queue
+  - { method: "<java.util.ArrayDeque: boolean add(java.lang.Object)>",from: 0,to: base,type: "java.util.ArrayDeque" }
+
 
   #class是taint说明这个class的classcode是可控的，所以newInstance得到的实例也是taint
   - { method: "<java.lang.Class: java.lang.Object newInstance()>",from: base,to: result,type: "java.lang.Object" }
