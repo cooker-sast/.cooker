@@ -1,11 +1,11 @@
 extend:
   # source
-  - taint-config/web/tomcat-web.yml
+  - taint-config/web/tomcat-web.yaml
   # sink
-  - taint-config/basic/defineClass.yml
+  - taint-config/basic/defineClass.yaml
   # transfer
-  - taint-config/basic/default-transfers.yml
+  - taint-config/basic/default-transfers.yaml
   # vulns
   - taint-config/vulns
   # 原生反序列化
-  - taint-config/basic/jnd-deser.yml
+  - taint-config/basic/jnd-deser.yaml
