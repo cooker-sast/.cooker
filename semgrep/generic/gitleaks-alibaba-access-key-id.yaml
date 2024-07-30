@@ -1,0 +1,10 @@
+rules:
+    - id: alibaba-access-key-id
+      pattern-regex: (?i)\b((LTAI)(?i)[a-z0-9]{20})(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: Alibaba AccessKey ID
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak

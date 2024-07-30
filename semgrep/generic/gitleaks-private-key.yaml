@@ -1,0 +1,10 @@
+rules:
+    - id: private-key
+      pattern-regex: (?i)-----BEGIN[ A-Z0-9_-]{0,100}PRIVATE KEY( BLOCK)?-----[\s\S-]*KEY( BLOCK)?----
+      message: Private Key
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak

@@ -1,0 +1,10 @@
+rules:
+    - id: aws-access-token
+      pattern-regex: (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
+      message: AWS
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak

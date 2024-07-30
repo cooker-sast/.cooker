@@ -1,0 +1,91 @@
+rules:
+    - id: alibaba-cloud-access-key-id
+      pattern-regex: (?i)(?:key|id)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:{1,3}=|\|\|:|<=|=>|:|\?=)(?:'|\"|\s|=|\x60){0,5}(LTAI[0-9a-zA-Z]{20})(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: Alibaba Cloud Access Key Id
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak
+    - id: aws-cloud-access-key-id
+      pattern-regex: (?i)(?:key|id)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:{1,3}=|\|\|:|<=|=>|:|\?=)(?:'|\"|\s|=|\x60){0,5}((A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16})(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: AWS Cloud Access Key Id
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak
+    - id: baidu-cloud-access-key-id
+      pattern-regex: (?i)(?:key|id)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:{1,3}=|\|\|:|<=|=>|:|\?=)(?:'|\"|\s|=|\x60){0,5}(ALTAK[0-9a-zA-Z]{21})(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: Baidu Cloud Access Key Id
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak
+    - id: gcp-google-cloud-access-key-id
+      pattern-regex: (?i)(?:key|id)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:{1,3}=|\|\|:|<=|=>|:|\?=)(?:'|\"|\s|=|\x60){0,5}(AIza[0-9A-Za-z_\-]{35})(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: GCP Google Cloud Access Key Id
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak
+    - id: huawei-cloud-access-key-id
+      pattern-regex: (?i)(?:key|id)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:{1,3}=|\|\|:|<=|=>|:|\?=)(?:'|\"|\s|=|\x60){0,5}([A-Z0-9]{20}([A-Z0-9]{20})?)(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: Huawei Google Cloud Access Key Id
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak
+    - id: jd-cloud-access-key-id
+      pattern-regex: (?i)(?:key|id)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:{1,3}=|\|\|:|<=|=>|:|\?=)(?:'|\"|\s|=|\x60){0,5}(JDC_[0-9A-Z]{28})(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: JD Cloud Access Key Id
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak
+    - id: qiniu-cloud-access-key-id
+      pattern-regex: (?i)(?:key|id)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:{1,3}=|\|\|:|<=|=>|:|\?=)(?:'|\"|\s|=|\x60){0,5}([a-zA-Z0-9-_]{40})(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: Qiniu Cloud Access Key Id
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak
+    - id: tencent-cloud-access-key-id
+      pattern-regex: (?i)(?:key|id)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:{1,3}=|\|\|:|<=|=>|:|\?=)(?:'|\"|\s|=|\x60){0,5}(AKID[0-9a-zA-Z]{32})(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: Tencent Cloud Access Key Id
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak
+    - id: uc-cloud-access-key-id
+      pattern-regex: (?i)(?:key|id)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:{1,3}=|\|\|:|<=|=>|:|\?=)(?:'|\"|\s|=|\x60){0,5}(UCLOUD[0-9A-Za-z_\-]+)(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: 优刻得 Access Key Id
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak
+    - id: volcano-engine-access-key-id
+      pattern-regex: (?i)(?:key|id)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:{1,3}=|\|\|:|<=|=>|:|\?=)(?:'|\"|\s|=|\x60){0,5}((AKL[0-9a-zA-Z_]+)|(AKTP[0-9a-zA-Z_]+))(?:['|\"|\n|\r|\s|\x60|;]|$)
+      message: Volcano Engine Access Key Id
+      severity: WARNING
+      languages:
+        - generic
+      metadata:
+        vulnerability_class:
+            - Sensitive Info Leak
