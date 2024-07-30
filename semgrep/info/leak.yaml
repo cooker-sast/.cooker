@@ -4,7 +4,7 @@ rules:
     message: "email"
     severity: WARNING
     languages:
-      - generic
+      - regex
     metadata:
       vulnerability_class:
         - Sensitive Info Leak

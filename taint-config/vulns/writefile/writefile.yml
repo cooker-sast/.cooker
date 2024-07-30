@@ -10,6 +10,12 @@ sinks:
 #  - { method: "<java.io.BufferedOutputStream: void write(byte[],int,int)>", index: 0}
 #  - { method: "<java.io.BufferedOutputStream: void write(byte[])>", index: base}
 #  - { method: "<java.io.BufferedOutputStream: void write(byte[])>", index: 0}
+  - { method: "<java.nio.file.Files: java.nio.file.Path copy(java.nio.file.Path,java.io.OutputStream)>", index: 0}
+  - { method: "<java.nio.file.Files: java.nio.file.Path copy(java.nio.file.Path,java.io.OutputStream)>", index: 1}
+  - { method: "<java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>", index: 0}
+  - { method: "<java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>", index: 1}
+  - { method: "<java.nio.file.Files: java.nio.file.Path copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])>", index: 0}
+  - { method: "<java.nio.file.Files: java.nio.file.Path copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])>", index: 1}
   - { method: "<java.nio.file.Files: java.nio.file.Path write(java.nio.file.Path,byte[],java.nio.file.OpenOption[])>", index: 0}
   - { method: "<java.nio.file.Files: java.nio.file.Path write(java.nio.file.Path,byte[],java.nio.file.OpenOption[])>", index: 1}
   - { method: "<org.apache.commons.io.FileUtils: void write(java.io.File,java.lang.CharSequence)>", index: 1}
