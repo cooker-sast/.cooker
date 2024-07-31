@@ -30,7 +30,6 @@ sinks:
   - { method: "<org.apache.commons.io.FileUtils: void write(java.io.File,java.lang.CharSequence,java.lang.String)>", index: 0}
   - { method: "<org.apache.commons.io.FileUtils: void write(java.io.File,java.lang.CharSequence,java.lang.String,boolean)>", index: 1}
   - { method: "<org.apache.commons.io.FileUtils: void write(java.io.File,java.lang.CharSequence,java.lang.String,boolean)>", index: 0}
-  - { method: "<org.apache.commons.io.FileUtils: void writeByteArrayToFile(java.io.File,byte[])>", index: 1}
   - { method: "<org.apache.commons.io.FileUtils: void writeByteArrayToFile(java.io.File,byte[])>", index: 0}
   - { method: "<org.apache.commons.io.FileUtils: void writeByteArrayToFile(java.io.File,byte[],boolean)>", index: 1}
   - { method: "<org.apache.commons.io.FileUtils: void writeByteArrayToFile(java.io.File,byte[],boolean)>", index: 0}
@@ -68,7 +67,6 @@ sinks:
   - { method: "<org.apache.commons.io.FileUtils: void writeStringToFile(java.io.File,java.lang.String,java.lang.String,boolean)>", index: 0}
   - { method: "<org.apache.commons.io.IOUtils: void write(java.lang.String,java.io.OutputStream,java.nio.charset.Charset)>", index: 1}
   - { method: "<org.apache.commons.io.IOUtils: void write(java.lang.String,java.io.OutputStream,java.nio.charset.Charset)>", index: 0}
-  - { method: "<org.springframework.web.multipart.MultipartFile: void transferTo(java.io.File)>", index: 1}
   - { method: "<org.springframework.web.multipart.MultipartFile: void transferTo(java.io.File)>", index: 0}
   - { method: "<org.apache.commons.io.IOUtils: void write(java.lang.String,java.io.OutputStream,java.nio.charset.Charset)>", index: 1}
   - { method: "<org.apache.commons.io.IOUtils: void write(java.lang.String,java.io.OutputStream,java.nio.charset.Charset)>", index: 0}
