@@ -1,0 +1,9 @@
+sinks:
+  - { method: "<org.beetl.core.Template: java.lang.String render()>", index: base }
+  - { method: "<org.beetl.core.Template: void renderTo(java.io.Writer)>", index: base }
+  - { method: "<org.beetl.core.Template: void renderTo(java.io.OutputStream)>", index: base }
+  - { method: "<org.beetl.core.Template: void renderTo(org.beetl.core.ByteWriter)>", index: base }
+
+transfers:
+  # String 的拼接
+  - { method: "<org.beetl.core.GroupTemplate: org.beetl.core.Template getTemplate(java.lang.String)>",from: 0,to: result,type: "org.beetl.core.Template" }
